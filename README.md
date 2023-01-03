@@ -46,6 +46,10 @@ Fuente: Elaboración propia
 Figura #2:
 ![image](https://user-images.githubusercontent.com/121684145/210283736-f8d73139-f751-4414-ad09-c7761d0ac59b.png)
 Fuente: http://www.cs.us.es/~fsancho/?e=107
+<br/>
+Ejemplo árbol combinatorio
+![image](https://user-images.githubusercontent.com/121684145/210299095-9bfe7eb4-5190-4c2d-95e2-b3f48950c113.png)
+
 #### **Movimientos con las que se puede ganar**
 Se considera que el mínimo de posiciones para ganar en el tres en raya es de 5.
 |Ganancia|Posibilidades de movimeintos|Probabilidad|
