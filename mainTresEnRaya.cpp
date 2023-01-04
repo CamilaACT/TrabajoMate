@@ -271,6 +271,17 @@ void playTresEnRaya(int whoseTurn)
 		declareWinner(whoseTurn);
 	}
 	}
+	// tiempo de compilacion del codigo 
+void tiempoCompilacion()
+{
+    auto start = std::chrono::high_resolution_clock::now();
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> elapsed = end - start;
+    float elapsed_time = elapsed.count();
+    
+      std::cout << std::fixed << std::setprecision(10) << "El tiempo de duración de la partida es: " << elapsed_time << " segundos" << std::endl;
+}
 	int main()  
 	{  
      int opcion;
@@ -283,10 +294,12 @@ void playTresEnRaya(int whoseTurn)
 		switch (opcion)
 		{
 		case 1:
-			playTresEnRaya(COMPUTER); 
+			playTresEnRaya(COMPUTER);
+		        tiempoCompilacion();
 			break;
 		case 2:
-			playTresEnRaya(HUMAN); 
+			playTresEnRaya(HUMAN);
+			tiempoCompilacion();
 			break;
 	    case 3:
 			printf("Fin del juego"); 
