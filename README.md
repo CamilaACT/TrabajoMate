@@ -30,14 +30,14 @@ El algoritmo minmax en teoría de juegos se encarga de reducir (minimizar) la p�
 * Jugador 1 Computador (O): El tiempo de respuesta durante la partida será aproximadamente de milisegundo, tiempo que tarda en procesarse el algoritmo.
 * Jugador 2 Humano(X): dependerá de la agilidad y estrategia de razonamiento, aproximadamente se podría establecerlo en 15 segundos como base y 45 segundos en promedio. 
 #### **Tiempos de los mejores y peores casos**
-Los casos especificados a continuación son considerados desde el jugador 1y los más comunes.Se contemplara como mejor caso victoria y el peor caso empate considerando que el juego perfecto termina en empate sin importar con qué juega el primer jugador de la partida.
+Los casos especificados a continuación son considerados desde el jugador 1y los más comunes.Se contemplara como mejor caso victoria y el peor caso empate considerando que el juego perfecto termina en empate sin importar con qué juega el primer jugador de la partida.Para el calculo del tiempo se implemento en el cóigo el uso de la funcion clock(), propia de la libreria ctime.
 
 |#|Caso de juego|Partida|Tiempo(min)|
 |--|--|--|--|
-|1|` Victoria jugador 1 (O) en 6 jugadas de la partida`|![image](https://user-images.githubusercontent.com/121684145/210283517-e380eb6a-536e-466f-b0a2-a9a64eb43413.png)| 1:00|
-|2|` Victoria jugador 1 (O) en 7 jugadas de la partida`|![image](https://user-images.githubusercontent.com/121684145/210283525-4908d0b0-2333-4378-9aec-7ca298d7bb50.png)| 1:27|
-|3|` Empate jugador 1 (O) y jugador 2(x) bloqueo horizontal-vertical`|![image](https://user-images.githubusercontent.com/121684145/210283550-2e1edb55-3891-49dc-aa63-8430c4b701c6.png)| 2:00|
-|4|` Empate jugador 1 (O) y jugador 2(x) bloqueo diagonal`|![image](https://user-images.githubusercontent.com/121684145/210283553-1810c2bd-d3a2-4155-88fd-5feabc233675.png)| 2:23|
+|1|` Victoria jugador 1 (O) en 6 jugadas de la partida`|![image](https://user-images.githubusercontent.com/121684145/210283517-e380eb6a-536e-466f-b0a2-a9a64eb43413.png)| 0.05432|
+|2|` Victoria jugador 1 (O) en 7 jugadas de la partida`|![image](https://user-images.githubusercontent.com/121684145/210283525-4908d0b0-2333-4378-9aec-7ca298d7bb50.png)| 0.04563|
+|3|` Empate jugador 1 (O) y jugador 2(x) bloqueo horizontal-vertical`|![image](https://user-images.githubusercontent.com/121684145/210283550-2e1edb55-3891-49dc-aa63-8430c4b701c6.png)| 0.04432|
+|4|` Empate jugador 1 (O) y jugador 2(x) bloqueo diagonal`|![image](https://user-images.githubusercontent.com/121684145/210283553-1810c2bd-d3a2-4155-88fd-5feabc233675.png)| 0.06453|
 
 # Estudio de posibilidades árbol combinatorio 
 El estudio de probabilidad de victoria, perdida o empate en el juego de tres en raya parte del estudio combinatorio de las posibilidades de colocar X y O en cada jugada. Por ejemplo, hay hay 9 formas posibles de colocar la primera marca, 8 formas restantes de colocar la segunda, 7 la tercera,6 la cuarta, 5 la quinta,4 la sexta,3 la septima,2 la octava y 1 la novena. Esto sería 9*8*7*6*5*4*3*2*1 = 9! = 362880. Representado en un árbol de posibilidad figura 2, donde la posición influye en el resultado del nodo hoja donde los resultados positivos favorecen al jugador 1, los resultados negativos favorecen al jugador 2 y el cero indica empate. La mayoría de los juegos tienen árboles de juego excesivamente grandes, de forma que no podemos expandir completamente el árbol hasta llegar a los nodos terminales, tal es el caso del tres en raya. Por ello, suele ser común usar un algoritmo de profundidad limitada que solo expande algunos niveles del árbol, sin llegar a los nodos terminales. Además, en el caso especifico del tres en raya se maneja un concepto de isomorfismo que se refiere a las mimas jugadas, pero con una reflexión en el plano figura 1.
