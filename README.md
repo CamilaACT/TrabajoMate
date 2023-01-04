@@ -1,4 +1,7 @@
-# MATEMÁTICAS DISCRETAS
+![image](https://user-images.githubusercontent.com/121684145/210482534-addf3a21-797c-43dc-8ce6-d7ee6883ad76.png)
+<br/>
+# UNIVERSIDAD DE LAS AMERICAS
+MATEMÁTICAS DISCRETAS<br/>
 Camila Cabrera,Mateo Encalada, Ariel Raura,Joe Cordero
 
 # Descripcion juego tres en raya
