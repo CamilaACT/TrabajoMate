@@ -30,7 +30,7 @@ El algoritmo minmax en teoría de juegos se encarga de reducir (minimizar) la p�
 * Jugador 1 Computador (O): El tiempo de respuesta durante la partida será aproximadamente de milisegundo, tiempo que tarda en procesarse el algoritmo.
 * Jugador 2 Humano(X): dependerá de la agilidad y estrategia de razonamiento, aproximadamente se podría establecerlo en 15 segundos como base y 45 segundos en promedio. 
 #### **Tiempos de los mejores y peores casos**
-Los casos especificados a continuación son considerados desde el jugador 1y los más comunes.Se contemplara como mejor caso victoria y el peor caso empate considerando que el juego perfecto termina en empate sin importar con qué juega el primer jugador de la partida.Para el calculo del tiempo se implemento en el cóigo el uso de la funcion clock(), propia de la libreria ctime.
+Los casos especificados a continuación son considerados desde el jugador 1y los más comunes.Se contemplara como mejor caso victoria y el peor caso empate considerando que el juego perfecto termina en empate sin importar con qué juega el primer jugador de la partida.Para el calculo del tiempo se implemento en el cóigo el uso de la funcion clock(), propia de la libreria ctime.Los tiempos tomados corresponden a la ejecución del código en una laptop con Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz   2.59 GHz y 16,0 GB.
 
 |#|Caso de juego|Partida|Tiempo(min)|
 |--|--|--|--|
